@@ -1,0 +1,39 @@
+@import "variables";
+
+.section {
+  margin-bottom: $s * 32;
+
+  .section__title {
+    margin-bottom: $s * 16;
+
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .sub-section {
+    margin-bottom: $s * 16;
+
+    &__text {
+      font-size: 1.2rem;
+
+      margin-bottom: $s * 8;
+    }
+
+    &__image {
+      max-height: 450px;
+    }
+
+    .list {
+      margin-top: $s * 4;
+      margin-bottom: $s * 1;
+    }
+
+    .image-wrapper {
+      display: flex;
+
+      img {
+        max-height: 450px;
+      }
+    }
+  }
+}

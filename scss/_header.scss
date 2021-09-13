@@ -1,0 +1,41 @@
+@import "variables";
+
+.header {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    padding: $s * 6;
+    flex-grow: 1;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+
+      margin-bottom: $s * 4;
+    }
+
+    p {
+      font-size: 2rem;
+
+      max-width: 400px;
+    }
+  }
+
+  .actions {
+    flex-grow: 1;
+
+    .btn {
+      width: 200px;
+
+      margin: $s * 4;
+    }
+
+    .action-more {
+      background-color: #1976d2;
+    }
+  }
+}

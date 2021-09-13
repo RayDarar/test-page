@@ -1,0 +1,17 @@
+@import "reset";
+@import "header";
+@import "section";
+@import "components/btn";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif !important;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
