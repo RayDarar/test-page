@@ -176,6 +176,7 @@ table {
 }
 .section .sub-section__text {
   font-size: 1.25rem;
+  line-height: 1.25em;
   margin-bottom: 32px;
 }
 .section .sub-section__image {
