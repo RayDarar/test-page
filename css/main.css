@@ -200,31 +200,46 @@ table {
 .section {
   margin-bottom: 128px;
 }
+@media screen and (max-width: 600px) {
+  .section {
+    margin-bottom: 112px;
+  }
+}
 .section .section__title {
   margin-bottom: 64px;
   font-size: 2rem;
   font-weight: bold;
 }
+@media screen and (max-width: 600px) {
+  .section .section__title {
+    font-size: 1.875rem;
+    margin-bottom: 48px;
+  }
+}
 .section .sub-section {
   margin-bottom: 64px;
+}
+.section .sub-section:last-of-type {
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 600px) {
+  .section .sub-section {
+    margin-bottom: 48px;
+  }
 }
 .section .sub-section__text {
   font-size: 1.25rem;
   line-height: 1.25em;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 600px) {
+  .section .sub-section__text {
+    font-size: 1.125rem;
+  }
+}
 .section .sub-section__image {
   max-height: 450px;
   max-width: 100%;
-}
-.section .sub-section__image--full {
-  width: 100%;
-  height: 450px;
-}
-.section .sub-section__image--full img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .section .sub-section .list {
   margin-top: 16px;
