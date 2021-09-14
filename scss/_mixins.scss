@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin mqDesktopMin {
+  @media screen and (max-width: $desktopMin) {
+    @content;
+  }
+}
+
+@mixin mqMobileMax {
+  @media screen and (max-width: $mobileMax) {
+    @content;
+  }
+}

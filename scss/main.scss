@@ -1,7 +1,9 @@
 @import "reset";
+@import "variables";
 @import "header";
 @import "section";
 @import "card";
+@import "mixins";
 @import "components/btn";
 
 * {
@@ -12,7 +14,18 @@
   font-family: "Roboto", sans-serif !important;
 }
 
+html {
+  font-size: 16px;
+}
+
 .content-wrapper {
   max-width: 750px;
   margin: 0 auto;
+
+  @include mqDesktopMin {
+    max-width: none;
+    margin: 0;
+
+    padding: 0 $s * 6;
+  }
 }

@@ -139,25 +139,59 @@ table {
   justify-content: center;
   align-items: center;
 }
+.header > * {
+  flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header > * {
+    flex-grow: 0;
+  }
+}
 .header .title {
   padding: 24px;
-  flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+  .header .title {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
 }
 .header .title h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 600px) {
+  .header .title h1 {
+    font-size: 3.75rem;
+  }
+}
 .header .title p {
   font-size: 2rem;
   max-width: 400px;
 }
-.header .actions {
-  flex-grow: 1;
+@media screen and (max-width: 600px) {
+  .header .title p {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header .actions {
+    display: flex;
+  }
 }
 .header .actions .btn {
   width: 200px;
   margin: 16px;
+}
+@media screen and (max-width: 600px) {
+  .header .actions .btn {
+    width: auto;
+  }
 }
 .header .actions .action-more {
   background-color: #1976d2;
@@ -181,6 +215,7 @@ table {
 }
 .section .sub-section__image {
   max-height: 450px;
+  max-width: 100%;
 }
 .section .sub-section__image--full {
   width: 100%;
@@ -292,9 +327,20 @@ table {
   font-family: "Roboto", sans-serif !important;
 }
 
+html {
+  font-size: 16px;
+}
+
 .content-wrapper {
   max-width: 750px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .content-wrapper {
+    max-width: none;
+    margin: 0;
+    padding: 0 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
