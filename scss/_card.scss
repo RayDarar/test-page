@@ -1,0 +1,38 @@
+@import "variables";
+
+.cards {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  gap: $s * 4;
+}
+
+.card {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+
+  padding: $s * 6;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    margin-bottom: $s * 4;
+  }
+
+  &__list {
+    font-size: 1.125rem;
+
+    li {
+      margin-bottom: $s * 1;
+
+      &:last-of-type {
+        margin-bottom: $s * 0;
+      }
+    }
+  }
+
+  &--last {
+    grid-column: 1 / 3;
+  }
+}
